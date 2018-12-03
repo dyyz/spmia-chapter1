@@ -22,4 +22,9 @@ public class Application {
 
         return String.format("{\"message\":\"Hello %s %s\"}", firstName, lastName);
     }
+    
+    @GetMapping({"/", "/index"})
+	public String index() {
+		return "index";
+	}
 }
